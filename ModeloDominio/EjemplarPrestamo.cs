@@ -46,7 +46,11 @@ namespace ModeloDominio
 
         public bool Equals(EjemplarPrestamo other)
         {
-            throw new NotImplementedException();
+            if (other == null) return false;
+
+            // La igualdad depende del Ejemplar y prestamo.
+            // (Usamos el Equals de Ejemplar que compara los códigos de barras)
+            return this.ejemplar.Equals(other.Ejemplar) && this.prestamo.Equals(other.prestamo);
         }
         //anormal
     }
