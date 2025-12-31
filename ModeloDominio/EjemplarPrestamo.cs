@@ -37,6 +37,11 @@ namespace ModeloDominio
             get { return fechaDevolucion; }
             set { fechaDevolucion = value; }
         }
+        public DateTime FechaPrevista
+        {
+            get { return this.fechaPrevista; }
+            set { this.fechaPrevista = value; }
+        }
 
         public bool Devuelto
         {
