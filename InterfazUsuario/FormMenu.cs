@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ModeloDominio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,15 @@ using System.Windows.Forms;
 
 namespace InterfazUsuario
 {
-    public partial class FormMenu : Form
+    public partial class FormMenuPrincipal : Form
     {
-        public FormMenu()
+        private Personal personal;
+
+        public FormMenuPrincipal(Personal p)
         {
             InitializeComponent();
+            personal = p;
+
         }
     }
 }
