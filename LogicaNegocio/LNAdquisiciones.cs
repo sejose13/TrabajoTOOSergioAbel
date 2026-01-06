@@ -15,8 +15,9 @@ namespace LogicaNegocio
 {
     public class LNAdquisiciones : LNPersonal, ILNAdquisiciones
     {
-        // --- Implementación de Adquisiciones (Documentos) ---
-
+        public LNAdquisiciones(PersonalAdquisiciones personal) : base(personal)
+        {
+        }
         public void DarAltaDocumento(Documento doc)
         {
             if (Persistencia.Persistencia.ReadDocumento(doc.Isbn) != null)

@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System;
 using System.Collections.Generic;
-using System.Linq; // Necesario para lógica de listas
+using System.Linq; 
 using ModeloDominio;
 using Persistencia;
 
@@ -15,18 +15,31 @@ namespace LogicaNegocio
 {
     public abstract class LNPersonal : ILNPersonal
     {
-        public bool IniciarSesion(string login, string pswd)
+        protected Personal personal;
+       
+        public LNPersonal(Personal personal)
+        {
+            this.personal = personal;
+        }
+        public static LNPersonal IniciarSesion(string login, string pswd)
         {
             Personal p = Persistencia.Persistencia.ReadPersonalPorLogin(login);
 
-            if (p == null) return false;
+            if (p == null) return null;
 
-            if (p.Password == pswd.GetHashCode().ToString())
+             if (p.Password == pswd.GetHashCode().ToString())
             {
-                return true; 
+                if (p is PersonalSala)
+                {
+                    return new LNSala((PersonalSala)p);
+                }
+                else if (p is PersonalAdquisiciones)
+                {
+                    return new LNAdquisiciones((PersonalAdquisiciones)p);
+                }
             }
 
-            return false; 
+            return null; // Contraseña mal o tipo desconocido
         }
 
         public void DarAltaUsuario(Usuario usr)
