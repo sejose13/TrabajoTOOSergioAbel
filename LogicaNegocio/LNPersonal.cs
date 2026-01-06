@@ -21,23 +21,13 @@ namespace LogicaNegocio
         {
             this.personal = personal;
         }
-        public static LNPersonal IniciarSesion(string login, string pswd)
+        public static Personal IniciarSesion(string login, string pswd)
         {
             Personal p = Persistencia.Persistencia.ReadPersonalPorLogin(login);
 
             if (p == null) return null;
 
-             if (p.Password == pswd.GetHashCode().ToString())
-            {
-                if (p is PersonalSala)
-                {
-                    return new LNSala((PersonalSala)p);
-                }
-                else if (p is PersonalAdquisiciones)
-                {
-                    return new LNAdquisiciones((PersonalAdquisiciones)p);
-                }
-            }
+             if (p.Password == pswd.GetHashCode().ToString()) return p;
 
             return null; // Contraseña mal o tipo desconocido
         }

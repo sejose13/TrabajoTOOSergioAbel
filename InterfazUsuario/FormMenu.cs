@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace InterfazUsuario
 {
-    public partial class FormMenuPrincipal : Form
+    public partial class FormMenu : Form
     {
         private Personal personal;
 
-        public FormMenuPrincipal(Personal p)
+        public FormMenu(Personal p)
         {
             InitializeComponent();
             personal = p;
