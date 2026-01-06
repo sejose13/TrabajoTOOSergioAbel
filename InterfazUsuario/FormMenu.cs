@@ -48,7 +48,9 @@ namespace InterfazUsuario
 
         private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormBusquedaUsuario frm = new FormBusquedaUsuario(personal);
+            frm.MdiParent = this; // Que se abra dentro
+            frm.Show();
         }
 
         private void listaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -76,7 +78,9 @@ namespace InterfazUsuario
 
         private void listadoDocumentoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormListadoDocumentos frm = new FormListadoDocumentos(personal);
+            frm.MdiParent = this; // Que se abra dentro
+            frm.Show();
         }
 
         private void másLeidoDocumentoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -142,6 +146,13 @@ namespace InterfazUsuario
         private void fueraDePlazoPrestamoToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void usuarios1a1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRecorridoUsuarios frm = new FormRecorridoUsuarios(personal);
+            frm.MdiParent = this; // Que se abra dentro
+            frm.Show();
         }
     }
 }
