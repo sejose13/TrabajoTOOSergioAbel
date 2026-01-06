@@ -15,8 +15,9 @@ namespace LogicaNegocio
 
     public class LNSala : LNPersonal, ILNSala
     {
-        // --- Implementación de Sala (Préstamos) ---
-
+        public LNSala(PersonalSala personal) : base(personal)
+        {
+        }
         public void DarAltaPrestamo(Prestamo pres)
         {
             foreach (var l in pres.Lineas)

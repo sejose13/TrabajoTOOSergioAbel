@@ -9,7 +9,7 @@ namespace LogicaNegocio
 {
     public interface ILNPersonal
     {
-        bool IniciarSesion(string nss, string pswd);
+        //bool IniciarSesion(string nss, string pswd);
         void DarAltaUsuario(Usuario usr);
         void DarBajaUsuario(Usuario usr);
         List<Usuario> GetUsuarios();

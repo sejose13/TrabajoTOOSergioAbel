@@ -9,7 +9,7 @@ namespace LogicaNegocio
 {
     public interface ILNSala : ILNPersonal
     {
-        // Métodos de la caja "Sala"
+
         void DarAltaPrestamo(Prestamo pres);
         void DarBajaPrestamo(Prestamo pres);
         bool GetEstadoPrestamo(Prestamo pres);
