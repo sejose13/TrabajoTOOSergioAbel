@@ -53,6 +53,9 @@ namespace InterfazUsuario
 
         private void listaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            FormListadoUsuarios frm = new FormListadoUsuarios(personal);
+            frm.MdiParent = this; // Que se abra dentro
+            frm.Show();
 
         }
 
