@@ -123,7 +123,7 @@ namespace Persistencia
                 }
             }
         }
-
+        // --- LECTURA ---
         public static Collection<Prestamo> ReadAllPrestamos()
         {
             Collection<Prestamo> lista = new Collection<Prestamo>();
@@ -131,5 +131,44 @@ namespace Persistencia
                 lista.Add(Transformer.PrestamoDatoAPrestamo(dato));
             return lista;
         }
+
+        public static Collection<Ejemplar> ReadAllEjemplares()
+        {
+            Collection<Ejemplar> lista = new Collection<Ejemplar>();
+            foreach (var dato in BD.TablaEjemplar)
+                lista.Add(Transformer.EjemplarDatoAEjemplar(dato));
+            return lista;
+        }
+
+        public static Collection<Usuario> ReadAllUsuarios()
+        {
+            Collection<Usuario> lista = new Collection<Usuario>();
+            foreach (var dato in BD.TablaUsuario)
+                lista.Add(Transformer.UsuarioDatoAUsuario(dato));
+            return lista;
+        }
+
+
+        // --- MÉTODOS DE BORRADO---
+
+        public static void DeleteDocumento(Documento doc)
+        {
+            if (BD.TablaDocumento.Contains(doc.Isbn))
+                BD.TablaDocumento.Remove(doc.Isbn);
+        }
+
+        public static void DeleteEjemplar(Ejemplar ej)
+        {
+            if (BD.TablaEjemplar.Contains(ej.Codigo))
+                BD.TablaEjemplar.Remove(ej.Codigo);
+        }
+
+        public static void DeletePrestamo(Prestamo p)
+        {
+             PrestamoClave clave = new PrestamoClave(p.Usuario.Dni, p.FechaInicio);
+            if (BD.TablaPrestamo.Contains(clave))
+                BD.TablaPrestamo.Remove(clave);
+
+            }
     }
 }

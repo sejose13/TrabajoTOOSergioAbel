@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BD.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="DocumentoDato.cs" />
     <Compile Include="EjemplarDato.cs" />
     <Compile Include="EjemplarPrestamoClave.cs" />
