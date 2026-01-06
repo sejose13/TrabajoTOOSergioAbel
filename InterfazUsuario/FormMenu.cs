@@ -63,5 +63,85 @@ namespace InterfazUsuario
         {
 
         }
+
+        private void altaDocumentoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bajaDocumentoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listadoDocumentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void másLeidoDocumentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void altaEjemplarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bajaEjemplarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buscarEjemplarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listadoEjemplarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void disponibilidadEjemplarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void altaPrestamoToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void devolverPrestamoEjemplarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buscarPrestamoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listadoPrestamoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listadoPrestamoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void documentosPrestamoSinDevolverToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fueraDePlazoPrestamoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
