@@ -19,7 +19,20 @@ namespace InterfazUsuario
         {
             InitializeComponent();
             personal = p;
+            configurarMenu();
+        }
 
+        public void configurarMenu()
+        {
+            if (personal is PersonalSala)
+            {
+                menuItemDocumentos.Visible = false;
+                menuItemEjemplares.Visible = false;
+            }
+            else if (personal is PersonalAdquisiciones)
+            {
+                menuItemPrestamos.Visible = false;
+            }
         }
     }
 }
