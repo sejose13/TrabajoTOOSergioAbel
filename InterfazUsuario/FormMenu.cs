@@ -34,5 +34,30 @@ namespace InterfazUsuario
                 menuItemPrestamos.Visible = false;
             }
         }
+
+        private void altaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bajaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void documentosPrestadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
