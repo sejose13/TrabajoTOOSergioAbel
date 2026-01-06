@@ -72,9 +72,7 @@ namespace InterfazUsuario
                 }
                 else
                 {
-                    // --- LÓGICA DE BAJA ---
-                    // Si no es alta, asumimos que es Baja (o podríamos bloquear el botón si es consulta)
-                    DialogResult res = MessageBox.Show("¿Está seguro que desea dar de baja al usuario?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                     DialogResult res = MessageBox.Show("¿Está seguro que desea dar de baja al usuario?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                     if (res == DialogResult.Yes)
                     {
@@ -83,11 +81,11 @@ namespace InterfazUsuario
                     }
                     else
                     {
-                        return; // Si dice que no, no cerramos la ventana
+                        return; 
                     }
                 }
 
-                this.Close(); // Cerramos al terminar
+                this.Close();
             }
             catch (Exception ex)
             {
