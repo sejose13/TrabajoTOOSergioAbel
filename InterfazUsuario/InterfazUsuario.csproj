@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormBusquedaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBusquedaUsuario.Designer.cs">
+      <DependentUpon>FormBusquedaUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDetalleUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,12 @@
     </Compile>
     <Compile Include="FormInputDato.Designer.cs">
       <DependentUpon>FormInputDato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListadoUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListadoUsuarios.Designer.cs">
+      <DependentUpon>FormListadoUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -72,11 +84,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBusquedaUsuario.resx">
+      <DependentUpon>FormBusquedaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDetalleUsuario.resx">
       <DependentUpon>FormDetalleUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInputDato.resx">
       <DependentUpon>FormInputDato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoUsuarios.resx">
+      <DependentUpon>FormListadoUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
