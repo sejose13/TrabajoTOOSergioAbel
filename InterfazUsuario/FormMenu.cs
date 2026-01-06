@@ -63,5 +63,12 @@ namespace InterfazUsuario
         {
 
         }
+
+        private void usuario1a1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRecorridoUsuarios frm = new FormRecorridoUsuarios(personal);
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
