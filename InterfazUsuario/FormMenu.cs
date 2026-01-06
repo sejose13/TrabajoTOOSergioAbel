@@ -1,4 +1,5 @@
-﻿using ModeloDominio;
+﻿using LogicaNegocio;
+using ModeloDominio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,9 @@ namespace InterfazUsuario
 {
     public partial class FormMenu : Form
     {
-        private Personal personal;
+        private LNPersonal personal;
 
-        public FormMenu(Personal p)
+        public FormMenu(LNPersonal p)
         {
             InitializeComponent();
             personal = p;
@@ -37,7 +38,7 @@ namespace InterfazUsuario
 
         private void altaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form alta = new FormDetalleUsuario
         }
 
         private void bajaToolStripMenuItem_Click(object sender, EventArgs e)

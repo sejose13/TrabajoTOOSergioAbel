@@ -26,7 +26,7 @@ namespace InterfazUsuario
             string login = txtNombre.Text;
             string pass = txtPassword.Text;
 
-            Personal logicaNegocio = LNPersonal.IniciarSesion(login, pass);
+            LNPersonal logicaNegocio = LNPersonal.IniciarSesion(login, pass);
 
             if (logicaNegocio != null)
             {

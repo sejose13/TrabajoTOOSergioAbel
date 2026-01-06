@@ -13,7 +13,7 @@ using Persistencia;
 
 namespace LogicaNegocio
 {
-    public abstract class LNPersonal : ILNPersonal
+    public class LNPersonal : ILNPersonal
     {
         protected Personal personal;
        
@@ -21,13 +21,13 @@ namespace LogicaNegocio
         {
             this.personal = personal;
         }
-        public static Personal IniciarSesion(string login, string pswd)
+        public static LNPersonal IniciarSesion(string login, string pswd)
         {
             Personal p = Persistencia.Persistencia.ReadPersonalPorLogin(login);
 
             if (p == null) return null;
 
-             if (p.Password == pswd.GetHashCode().ToString()) return p;
+             if (p.Password == pswd.GetHashCode().ToString()) return new LNPersonal(p);
 
             return null; // Contraseña mal o tipo desconocido
         }
