@@ -31,8 +31,8 @@
             this.btnOrdenDni = new System.Windows.Forms.Button();
             this.btnOrdenNombre = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.lbDnis = new System.Windows.Forms.ListBox();
+            this.lbNombres = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnOrdenDni
@@ -62,29 +62,29 @@
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // lbDnis
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(36, 96);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 173);
-            this.listBox1.TabIndex = 3;
+            this.lbDnis.FormattingEnabled = true;
+            this.lbDnis.Location = new System.Drawing.Point(36, 96);
+            this.lbDnis.Name = "lbDnis";
+            this.lbDnis.Size = new System.Drawing.Size(120, 173);
+            this.lbDnis.TabIndex = 3;
             // 
-            // listBox2
+            // lbNombres
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(176, 96);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(120, 173);
-            this.listBox2.TabIndex = 4;
+            this.lbNombres.FormattingEnabled = true;
+            this.lbNombres.Location = new System.Drawing.Point(176, 96);
+            this.lbNombres.Name = "lbNombres";
+            this.lbNombres.Size = new System.Drawing.Size(120, 173);
+            this.lbNombres.TabIndex = 4;
             // 
             // FormListadoUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(328, 332);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbNombres);
+            this.Controls.Add(this.lbDnis);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnOrdenNombre);
             this.Controls.Add(this.btnOrdenDni);
@@ -99,7 +99,7 @@
         private System.Windows.Forms.Button btnOrdenDni;
         private System.Windows.Forms.Button btnOrdenNombre;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox lbDnis;
+        private System.Windows.Forms.ListBox lbNombres;
     }
 }
