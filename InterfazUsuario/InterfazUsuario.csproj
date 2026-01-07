@@ -58,18 +58,6 @@
     <Compile Include="FormBusquedaUsuario.Designer.cs">
       <DependentUpon>FormBusquedaUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormDetalleUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormDetalleUsuario.Designer.cs">
-      <DependentUpon>FormDetalleUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormInputDato.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormInputDato.Designer.cs">
-      <DependentUpon>FormInputDato.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormListadoDocumentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,12 +101,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBusquedaUsuario.resx">
       <DependentUpon>FormBusquedaUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormDetalleUsuario.resx">
-      <DependentUpon>FormDetalleUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormInputDato.resx">
-      <DependentUpon>FormInputDato.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListadoDocumentos.resx">
       <DependentUpon>FormListadoDocumentos.cs</DependentUpon>
