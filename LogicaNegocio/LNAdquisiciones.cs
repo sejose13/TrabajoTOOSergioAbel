@@ -72,6 +72,11 @@ namespace LogicaNegocio
             return Persistencia.Persistencia.ReadDocumento(topIsbn);
         }
 
+        public Documento GetDocumento(string isbn)
+        {
+            return Persistencia.Persistencia.ReadDocumento(isbn);
+        }
+
         public List<Documento> GetDocumentos()
         {
             return new List<Documento>(Persistencia.Persistencia.ReadAllDocumentos());

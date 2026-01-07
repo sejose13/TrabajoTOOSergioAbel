@@ -52,6 +52,12 @@
     <Compile Include="FormAltaPrestamo.Designer.cs">
       <DependentUpon>FormAltaPrestamo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAltaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAltaUsuario.Designer.cs">
+      <DependentUpon>FormAltaUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormBusquedaUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAltaPrestamo.resx">
       <DependentUpon>FormAltaPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAltaUsuario.resx">
+      <DependentUpon>FormAltaUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBusquedaUsuario.resx">
       <DependentUpon>FormBusquedaUsuario.cs</DependentUpon>
