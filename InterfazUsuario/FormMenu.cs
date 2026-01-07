@@ -63,7 +63,20 @@ namespace InterfazUsuario
 
         private void documentosPrestadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+            FormBusquedaUsuario frmBuscar = new FormBusquedaUsuario(personal);
+            frmBuscar.Text = "Seleccione usuario a consultar";
 
+            if (frmBuscar.ShowDialog() == DialogResult.OK)
+            {
+                
+                Usuario usuarioElegido = frmBuscar.UsuarioSeleccionado;
+
+              
+                FormListadoPrestamosUsuario frmListado = new FormListadoPrestamosUsuario(personal, usuarioElegido);
+                frmListado.MdiParent = this;
+                frmListado.Show();
+            }
         }
 
         private void altaDocumentoToolStripMenuItem1_Click(object sender, EventArgs e)
