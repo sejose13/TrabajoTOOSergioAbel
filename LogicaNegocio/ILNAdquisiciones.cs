@@ -24,5 +24,6 @@ namespace LogicaNegocio
         List<Ejemplar> GetEjemplaresSinPrestar(Documento doc);
 
         DateTime? GetFechaDisponible(Ejemplar ejemplar);
+        List<Ejemplar> GetEjemplaress();
     }
 }
