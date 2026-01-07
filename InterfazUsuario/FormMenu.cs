@@ -38,7 +38,9 @@ namespace InterfazUsuario
 
         private void altaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form alta = new FormDetalleUsuario
+            FormAltaUsuario alta = new FormAltaUsuario(personal);
+            alta.MdiParent = this; // Que se abra dentro
+            alta.Show();
         }
 
         private void bajaToolStripMenuItem_Click(object sender, EventArgs e)

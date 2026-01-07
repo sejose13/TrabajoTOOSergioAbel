@@ -27,13 +27,13 @@ namespace InterfazUsuario
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(txtDni.Text) || string.IsNullOrWhiteSpace(txtNombre.Text))
+                if (string.IsNullOrWhiteSpace(lbDni.Text) || string.IsNullOrWhiteSpace(lbNombre.Text))
                 {
                     MessageBox.Show("Debe rellenar todos los campos.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                Usuario nuevoUsuario = new Usuario(txtNombre.Text, txtDni.Text);
+                Usuario nuevoUsuario = new Usuario(lbNombre.Text, lbDni.Text);
                 ln.DarAltaUsuario(nuevoUsuario);
 
                 MessageBox.Show("Usuario creado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);

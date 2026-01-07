@@ -30,10 +30,10 @@
         {
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.txtDni = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.lbDni = new System.Windows.Forms.Label();
+            this.lbNombre = new System.Windows.Forms.Label();
+            this.txtDni = new System.Windows.Forms.ComboBox();
+            this.txtNombre = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnAceptar
@@ -56,39 +56,39 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // lbDni
+            // 
+            this.lbDni.AutoSize = true;
+            this.lbDni.Location = new System.Drawing.Point(332, 56);
+            this.lbDni.Name = "lbDni";
+            this.lbDni.Size = new System.Drawing.Size(33, 16);
+            this.lbDni.TabIndex = 2;
+            this.lbDni.Text = "DNI:";
+            // 
+            // lbNombre
+            // 
+            this.lbNombre.AutoSize = true;
+            this.lbNombre.Location = new System.Drawing.Point(332, 139);
+            this.lbNombre.Name = "lbNombre";
+            this.lbNombre.Size = new System.Drawing.Size(59, 16);
+            this.lbNombre.TabIndex = 3;
+            this.lbNombre.Text = "Nombre:";
+            // 
             // txtDni
             // 
-            this.txtDni.AutoSize = true;
-            this.txtDni.Location = new System.Drawing.Point(332, 56);
+            this.txtDni.FormattingEnabled = true;
+            this.txtDni.Location = new System.Drawing.Point(424, 56);
             this.txtDni.Name = "txtDni";
-            this.txtDni.Size = new System.Drawing.Size(33, 16);
-            this.txtDni.TabIndex = 2;
-            this.txtDni.Text = "DNI:";
+            this.txtDni.Size = new System.Drawing.Size(121, 24);
+            this.txtDni.TabIndex = 4;
             // 
             // txtNombre
             // 
-            this.txtNombre.AutoSize = true;
-            this.txtNombre.Location = new System.Drawing.Point(332, 139);
+            this.txtNombre.FormattingEnabled = true;
+            this.txtNombre.Location = new System.Drawing.Point(424, 139);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(59, 16);
-            this.txtNombre.TabIndex = 3;
-            this.txtNombre.Text = "Nombre:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(424, 56);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 4;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(424, 139);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 5;
+            this.txtNombre.Size = new System.Drawing.Size(121, 24);
+            this.txtNombre.TabIndex = 5;
             // 
             // FormAltaUsuario
             // 
@@ -96,10 +96,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(911, 450);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtDni);
+            this.Controls.Add(this.lbNombre);
+            this.Controls.Add(this.lbDni);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Name = "FormAltaUsuario";
@@ -113,9 +113,9 @@
 
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Label txtDni;
-        private System.Windows.Forms.Label txtNombre;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label lbDni;
+        private System.Windows.Forms.Label lbNombre;
+        private System.Windows.Forms.ComboBox txtDni;
+        private System.Windows.Forms.ComboBox txtNombre;
     }
 }

@@ -58,6 +58,12 @@
     <Compile Include="FormAltaUsuario.Designer.cs">
       <DependentUpon>FormAltaUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBajaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBajaUsuario.Designer.cs">
+      <DependentUpon>FormBajaUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormBusquedaUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAltaUsuario.resx">
       <DependentUpon>FormAltaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBajaUsuario.resx">
+      <DependentUpon>FormBajaUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBusquedaUsuario.resx">
       <DependentUpon>FormBusquedaUsuario.cs</DependentUpon>
