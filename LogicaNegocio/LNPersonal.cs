@@ -88,5 +88,10 @@ namespace LogicaNegocio
             }
             return docs;
         }
+
+        public Personal UsuarioLogueado
+        {
+            get { return this.personal; }
+        }
     }
 }
