@@ -52,6 +52,12 @@
     <Compile Include="FormAltaDocumento.Designer.cs">
       <DependentUpon>FormAltaDocumento.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAltaEjemplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAltaEjemplar.Designer.cs">
+      <DependentUpon>FormAltaEjemplar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAltaPrestamo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,18 @@
     </Compile>
     <Compile Include="FormAltaUsuario.Designer.cs">
       <DependentUpon>FormAltaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBajaDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBajaDocumento.Designer.cs">
+      <DependentUpon>FormBajaDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBajaEjemplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBajaEjemplar.Designer.cs">
+      <DependentUpon>FormBajaEjemplar.cs</DependentUpon>
     </Compile>
     <Compile Include="FormBajaUsuario.cs">
       <SubType>Form</SubType>
@@ -141,11 +159,20 @@
     <EmbeddedResource Include="FormAltaDocumento.resx">
       <DependentUpon>FormAltaDocumento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAltaEjemplar.resx">
+      <DependentUpon>FormAltaEjemplar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAltaPrestamo.resx">
       <DependentUpon>FormAltaPrestamo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAltaUsuario.resx">
       <DependentUpon>FormAltaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBajaDocumento.resx">
+      <DependentUpon>FormBajaDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBajaEjemplar.resx">
+      <DependentUpon>FormBajaEjemplar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBajaUsuario.resx">
       <DependentUpon>FormBajaUsuario.cs</DependentUpon>

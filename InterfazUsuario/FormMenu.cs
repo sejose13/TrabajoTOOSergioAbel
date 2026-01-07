@@ -85,12 +85,16 @@ namespace InterfazUsuario
 
         private void altaDocumentoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            FormAltaDocumento frm = new FormAltaDocumento((LNAdquisiciones) personal);
+            frm.MdiParent = this; // Que se abra dentro
+            frm.Show();
         }
 
         private void bajaDocumentoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            FormBajaDocumento frm = new FormBajaDocumento((LNAdquisiciones) personal);
+            frm.MdiParent = this; // Que se abra dentro
+            frm.Show();
         }
 
         private void listadoDocumentoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -109,12 +113,16 @@ namespace InterfazUsuario
 
         private void altaEjemplarToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-
+            FormAltaEjemplar frm = new FormAltaEjemplar((LNAdquisiciones) personal);
+            frm.MdiParent = this; // Que se abra dentro
+            frm.Show();
         }
 
         private void bajaEjemplarToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-
+            FormBajaEjemplar frm = new FormBajaEjemplar((LNAdquisiciones) personal);
+            frm.MdiParent = this; // Que se abra dentro
+            frm.Show();
         }
         private void listadoEjemplarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -140,35 +148,6 @@ namespace InterfazUsuario
 
         }
 
-        private void devolverPrestamoEjemplarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buscarPrestamoToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listadoPrestamoToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listadoPrestamoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void documentosPrestamoSinDevolverToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fueraDePlazoPrestamoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void usuarios1a1ToolStripMenuItem_Click(object sender, EventArgs e)
         {

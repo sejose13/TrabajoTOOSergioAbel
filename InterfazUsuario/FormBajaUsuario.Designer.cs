@@ -50,6 +50,7 @@
             this.btnDarBaja.TabIndex = 2;
             this.btnDarBaja.Text = "Dar de baja";
             this.btnDarBaja.UseVisualStyleBackColor = true;
+            this.btnDarBaja.Click += new System.EventHandler(this.btnDarBaja_Click);
             // 
             // txtDni
             // 
@@ -62,6 +63,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtDni);
             this.Controls.Add(this.btnDarBaja);

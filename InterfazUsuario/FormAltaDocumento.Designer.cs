@@ -35,6 +35,10 @@
             this.txtEditorial = new System.Windows.Forms.TextBox();
             this.txtAno = new System.Windows.Forms.TextBox();
             this.panelAudio = new System.Windows.Forms.GroupBox();
+            this.txtDuracion = new System.Windows.Forms.TextBox();
+            this.txtFormato = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,10 +46,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtFormato = new System.Windows.Forms.TextBox();
-            this.txtDuracion = new System.Windows.Forms.TextBox();
             this.panelAudio.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +56,7 @@
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(121, 24);
             this.cmbTipo.TabIndex = 0;
+            this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
             // 
             // txtIsbn
             // 
@@ -105,6 +106,38 @@
             this.panelAudio.TabStop = false;
             this.panelAudio.Text = "groupBox1";
             // 
+            // txtDuracion
+            // 
+            this.txtDuracion.Location = new System.Drawing.Point(123, 59);
+            this.txtDuracion.Name = "txtDuracion";
+            this.txtDuracion.Size = new System.Drawing.Size(100, 22);
+            this.txtDuracion.TabIndex = 3;
+            // 
+            // txtFormato
+            // 
+            this.txtFormato.Location = new System.Drawing.Point(123, 30);
+            this.txtFormato.Name = "txtFormato";
+            this.txtFormato.Size = new System.Drawing.Size(100, 22);
+            this.txtFormato.TabIndex = 2;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(41, 65);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 16);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Duración";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(41, 37);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 16);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Formato";
+            // 
             // btnAceptar
             // 
             this.btnAceptar.Location = new System.Drawing.Point(342, 237);
@@ -113,6 +146,7 @@
             this.btnAceptar.TabIndex = 7;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
@@ -122,6 +156,7 @@
             this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // label1
             // 
@@ -168,42 +203,11 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "Año";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(41, 37);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 16);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Formato";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(41, 65);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 16);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Duración";
-            // 
-            // txtFormato
-            // 
-            this.txtFormato.Location = new System.Drawing.Point(123, 30);
-            this.txtFormato.Name = "txtFormato";
-            this.txtFormato.Size = new System.Drawing.Size(100, 22);
-            this.txtFormato.TabIndex = 2;
-            // 
-            // txtDuracion
-            // 
-            this.txtDuracion.Location = new System.Drawing.Point(123, 59);
-            this.txtDuracion.Name = "txtDuracion";
-            this.txtDuracion.Size = new System.Drawing.Size(100, 22);
-            this.txtDuracion.TabIndex = 3;
-            // 
             // FormAltaDocumento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
