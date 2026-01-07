@@ -64,6 +64,12 @@
     <Compile Include="FormListadoDocumentos.Designer.cs">
       <DependentUpon>FormListadoDocumentos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListadoPrestamosUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListadoPrestamosUsuario.Designer.cs">
+      <DependentUpon>FormListadoPrestamosUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormListadoUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormListadoDocumentos.resx">
       <DependentUpon>FormListadoDocumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoPrestamosUsuario.resx">
+      <DependentUpon>FormListadoPrestamosUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListadoUsuarios.resx">
       <DependentUpon>FormListadoUsuarios.cs</DependentUpon>
