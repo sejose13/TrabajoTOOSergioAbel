@@ -45,7 +45,9 @@ namespace InterfazUsuario
 
         private void bajaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormBajaUsuario baja = new FormBajaUsuario(personal);
+            baja.MdiParent = this; // Que se abra dentro
+            baja.Show();
         }
 
         private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
