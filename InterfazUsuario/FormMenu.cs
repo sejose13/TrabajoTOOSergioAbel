@@ -115,6 +115,9 @@ namespace InterfazUsuario
 
         private void altaPrestamoToolStripMenuItem3_Click(object sender, EventArgs e)
         {
+            FormAltaPrestamo frm = new FormAltaPrestamo(personal);
+            frm.MdiParent = this; // Que se abra dentro
+            frm.Show();
 
         }
 
