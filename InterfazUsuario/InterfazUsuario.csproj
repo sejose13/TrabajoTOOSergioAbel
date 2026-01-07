@@ -76,6 +76,12 @@
     <Compile Include="FormBusquedaUsuario.Designer.cs">
       <DependentUpon>FormBusquedaUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDisponibilidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDisponibilidad.Designer.cs">
+      <DependentUpon>FormDisponibilidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDocumentoMasLeido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBusquedaUsuario.resx">
       <DependentUpon>FormBusquedaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDisponibilidad.resx">
+      <DependentUpon>FormDisponibilidad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDocumentoMasLeido.resx">
       <DependentUpon>FormDocumentoMasLeido.cs</DependentUpon>

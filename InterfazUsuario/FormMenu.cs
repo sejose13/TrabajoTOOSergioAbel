@@ -127,7 +127,9 @@ namespace InterfazUsuario
 
         private void disponibilidadEjemplarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormDisponibilidad frm = new FormDisponibilidad(personal);
+            frm.MdiParent = this; // Opcional, si quieres que se abra dentro
+            frm.Show();
         }
 
         private void altaPrestamoToolStripMenuItem3_Click(object sender, EventArgs e)
