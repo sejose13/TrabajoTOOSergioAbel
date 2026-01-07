@@ -34,7 +34,7 @@
             this.txtAutor = new System.Windows.Forms.TextBox();
             this.txtEditorial = new System.Windows.Forms.TextBox();
             this.txtAno = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panelAudio = new System.Windows.Forms.GroupBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,9 +44,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
+            this.txtFormato = new System.Windows.Forms.TextBox();
+            this.txtDuracion = new System.Windows.Forms.TextBox();
+            this.panelAudio.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmbTipo
@@ -92,18 +92,18 @@
             this.txtAno.Size = new System.Drawing.Size(100, 22);
             this.txtAno.TabIndex = 5;
             // 
-            // groupBox1
+            // panelAudio
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Location = new System.Drawing.Point(423, 207);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(318, 189);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.panelAudio.Controls.Add(this.txtDuracion);
+            this.panelAudio.Controls.Add(this.txtFormato);
+            this.panelAudio.Controls.Add(this.label7);
+            this.panelAudio.Controls.Add(this.label6);
+            this.panelAudio.Location = new System.Drawing.Point(423, 207);
+            this.panelAudio.Name = "panelAudio";
+            this.panelAudio.Size = new System.Drawing.Size(318, 189);
+            this.panelAudio.TabIndex = 6;
+            this.panelAudio.TabStop = false;
+            this.panelAudio.Text = "groupBox1";
             // 
             // btnAceptar
             // 
@@ -173,32 +173,32 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(41, 37);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 16);
+            this.label6.Size = new System.Drawing.Size(57, 16);
             this.label6.TabIndex = 0;
-            this.label6.Text = "label6";
+            this.label6.Text = "Formato";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(41, 65);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 16);
+            this.label7.Size = new System.Drawing.Size(61, 16);
             this.label7.TabIndex = 1;
-            this.label7.Text = "label7";
+            this.label7.Text = "Duración";
             // 
-            // textBox1
+            // txtFormato
             // 
-            this.textBox1.Location = new System.Drawing.Point(123, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 2;
+            this.txtFormato.Location = new System.Drawing.Point(123, 30);
+            this.txtFormato.Name = "txtFormato";
+            this.txtFormato.Size = new System.Drawing.Size(100, 22);
+            this.txtFormato.TabIndex = 2;
             // 
-            // textBox2
+            // txtDuracion
             // 
-            this.textBox2.Location = new System.Drawing.Point(123, 59);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 3;
+            this.txtDuracion.Location = new System.Drawing.Point(123, 59);
+            this.txtDuracion.Name = "txtDuracion";
+            this.txtDuracion.Size = new System.Drawing.Size(100, 22);
+            this.txtDuracion.TabIndex = 3;
             // 
             // FormAltaDocumento
             // 
@@ -212,7 +212,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panelAudio);
             this.Controls.Add(this.txtAno);
             this.Controls.Add(this.txtEditorial);
             this.Controls.Add(this.txtAutor);
@@ -221,8 +221,8 @@
             this.Controls.Add(this.cmbTipo);
             this.Name = "FormAltaDocumento";
             this.Text = "FormAltaDocumento";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.panelAudio.ResumeLayout(false);
+            this.panelAudio.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,7 +236,7 @@
         private System.Windows.Forms.TextBox txtAutor;
         private System.Windows.Forms.TextBox txtEditorial;
         private System.Windows.Forms.TextBox txtAno;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox panelAudio;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label label1;
@@ -244,8 +244,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDuracion;
+        private System.Windows.Forms.TextBox txtFormato;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
     }
