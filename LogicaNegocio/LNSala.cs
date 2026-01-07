@@ -129,5 +129,11 @@ namespace LogicaNegocio
         {
             return prestamo.Lineas.Where(l => !l.Devuelto).Select(l => l.Ejemplar.Documento).ToList();
         }
+
+        public List<Ejemplar> GetEjemplaresDisponibles()
+        {
+            List<Ejemplar> todos = new List<Ejemplar>(Persistencia.Persistencia.ReadAllEjemplares());
+            return todos.Where(e => !e.Prestado).ToList();
+        }
     }
 }

@@ -47,13 +47,18 @@ namespace ModeloDominio
 
         public override string ToString()
         {
-            return "Ejemplar: " + this.codigo;
+          
+            return $"Codigo: {Codigo} | ISBN: {Documento.Isbn} | Título: {Documento.Titulo}";
         }
 
         public bool Equals(Ejemplar other)
         {
             if (other == null) return false;
             return this.codigo.Equals(other.Codigo);
+        }
+        public int ObtenerDiasPrestamo()
+        {
+            return 15;
         }
     }
 }
