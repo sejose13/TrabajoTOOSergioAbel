@@ -116,14 +116,12 @@ namespace InterfazUsuario
         {
 
         }
-
-        private void buscarEjemplarToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void listadoEjemplarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+
+            FormListadoEjemplares frm = new FormListadoEjemplares(personal);
+            frm.MdiParent = this;
+            frm.Show();
 
         }
 

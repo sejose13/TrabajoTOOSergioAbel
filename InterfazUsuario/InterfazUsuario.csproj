@@ -82,6 +82,12 @@
     <Compile Include="FormListadoDocumentos.Designer.cs">
       <DependentUpon>FormListadoDocumentos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListadoEjemplares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListadoEjemplares.Designer.cs">
+      <DependentUpon>FormListadoEjemplares.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormListadoPrestamosUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormListadoDocumentos.resx">
       <DependentUpon>FormListadoDocumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoEjemplares.resx">
+      <DependentUpon>FormListadoEjemplares.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListadoPrestamosUsuario.resx">
       <DependentUpon>FormListadoPrestamosUsuario.cs</DependentUpon>

@@ -110,5 +110,11 @@ namespace LogicaNegocio
             }
             return null;
         }
+
+        public List<Ejemplar> GetEjemplaress()
+        {
+            // Asumimos que Persistencia tiene un método para devolver la lista completa
+            return new List<Ejemplar>(Persistencia.Persistencia.ReadAllEjemplares());
+        }
     }
 }
