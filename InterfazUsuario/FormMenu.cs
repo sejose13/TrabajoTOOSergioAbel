@@ -100,7 +100,9 @@ namespace InterfazUsuario
 
         private void másLeidoDocumentoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormDocumentoMasLeido frm = new FormDocumentoMasLeido(personal);
+            frm.MdiParent = this; // Que se abra dentro
+            frm.Show();
         }
 
         private void altaEjemplarToolStripMenuItem2_Click(object sender, EventArgs e)
