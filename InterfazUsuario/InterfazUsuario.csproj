@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAltaDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAltaDocumento.Designer.cs">
+      <DependentUpon>FormAltaDocumento.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAltaPrestamo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAltaDocumento.resx">
+      <DependentUpon>FormAltaDocumento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAltaPrestamo.resx">
       <DependentUpon>FormAltaPrestamo.cs</DependentUpon>
     </EmbeddedResource>
